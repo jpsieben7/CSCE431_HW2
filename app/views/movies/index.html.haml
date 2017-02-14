@@ -11,7 +11,6 @@
       -# %th Release Date
       %th{:class=>("hilite" if @sorted_column == "release_date")}= link_to 'Release Date', movies_path(:sort_by=>'release_date'), :id=>"rd_header"
       %th More Info
-      -# %th{:class=>("hilite" if @sorted_column == "description")}= link_to 'More Info', movies_path(:sort_by=>'description'), :id=>"descrip_header"
   %tbody
     - @movies.each do |movie|
       %tr
